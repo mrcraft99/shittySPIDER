@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xml:lang="zh-CN" lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml"><head id="Head">
+<!--**********************************************************************************-->
+<!-- EasySite?- http://www.huilan.com                                          -->
+<!-- Copyright (c) 2002-2011                                                          -->
+<!-- by Huilan Information Technology Co., Ltd.                                                        -->
+<!--**********************************************************************************-->
+<meta http-equiv="X-UA-Compatible" content="IE=8" /><meta id="MetaConentType" http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta http-equiv="Content-Script-Type" content="text/javascript" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta id="MetaDescription" name="DESCRIPTION" content="人身险产品" /><meta id="MetaKeywords" name="KEYWORDS" content="中国保险监督管理委员会,EasySite,ESS" /><meta id="MetaCopyright" name="COPYRIGHT" content="Copyright 2011 by Huilan Information Technology Co., Ltd." /><meta id="MetaGenerator" name="GENERATOR" content="EasySite " /><meta id="MetaAuthor" name="AUTHOR" content="中国保险监督管理委员会" /><meta name="RESOURCE-TYPE" content="DOCUMENT" /><meta name="DISTRIBUTION" content="GLOBAL" /><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" /><meta name="REVISIT-AFTER" content="1 DAYS" /><meta name="RATING" content="GENERAL" /><meta http-equiv="PAGE-ENTER" content="RevealTrans(Duration=0,Transition=1)" /><style id="StylePlaceholder" type="text/css">.ess_essmenu_ctlessmenu_spmbctr {border-bottom: Transparent 0px solid; border-left: Transparent 0px solid; border-top: Transparent 0px solid; border-right: Transparent 0px solid;  background-color: Transparent;}
+.ess_essmenu_ctlessmenu_spmbar {cursor: pointer; cursor: hand; height:0;}
+.ess_essmenu_ctlessmenu_spmitm {cursor: pointer; cursor: hand; color: Transparent; font-size: 12pt; font-weight: normal; font-style: normal; border-left: Transparent 0px solid; border-bottom: Transparent 0px solid; border-top: Transparent 0px solid; border-right: Transparent 0px solid;}
+.ess_essmenu_ctlessmenu_spmicn {cursor: pointer; cursor: hand; background-color: Transparent; border-left: Transparent 1px solid; border-bottom: Transparent 1px solid; border-top: Transparent 1px solid; text-align: center; width: 5;height: 0;display:none;}
+.ess_essmenu_ctlessmenu_spmsub {z-index: 1000; cursor: pointer; cursor: hand; background-color: Transparent; filter:progid:DXImageTransform.Microsoft.Shadow(color='DimGray', Direction=135, Strength=3) ;border-bottom: Transparent 0px solid; border-left: Transparent 0px solid; border-top: Transparent 0px solid; border-right: Transparent 0px solid;}
+.ess_essmenu_ctlessmenu_spmbrk {border-bottom: Transparent 0px solid; border-left: Transparent 0px solid; border-top: Transparent 0px solid;  border-right: Transparent 0px solid; background-color: White; height: 0px;}
+.ess_essmenu_ctlessmenu_spmitmsel {background-color: Transparent; cursor: pointer; cursor: hand; color: Transparent; font-size: 12pt; font-weight: normal; font-style: normal;}
+.ess_essmenu_ctlessmenu_spmarw {font-family: webdings; font-size: 10pt; cursor: pointer; cursor: hand; border-right: Transparent 1px solid; border-bottom: Transparent 1px solid; border-top: Transparent 0px solid; display:none;}
+.ess_essmenu_ctlessmenu_spmrarw {font-family: webdings; font-size: 10pt; cursor: pointer; cursor: hand;}
+.ess_essmenu_ctlessmenu_spmitmscr {width: 100%; font-size: 6pt;}
+</style><link id="ADesktopModules_TowLevelMenu" rel="stylesheet" type="text/css" href="/DesktopModules/TowLevelMenu/module.css" /><link id="APortals__default_" rel="stylesheet" type="text/css" href="/Portals/_default/default.css" /><link id="APortals_0_Skins_2013bjherji_" rel="stylesheet" type="text/css" href="/Portals/0/Skins/2013bjherji/skin.css" /><link id="APortals_0_" rel="stylesheet" type="text/css" href="/Portals/0/portal.css" /><script type="text/javascript" src="/Resources/Shared/scripts/jquery/jquery.min.js"></script><link href="/Portals/_default/Skins/_default/WebControlSkin/Default/TabStrip.Default.css" rel="stylesheet" type="text/css" /><link href="/Portals/_default/Skins/_default/WebControlSkin/Default/RibbonBar/RibbonBar.Default.css" rel="stylesheet" type="text/css" /><link href="/Portals/_default/Skins/_default/WebControlSkin/Default/RibbonBar/TabStrip.Default.css" rel="stylesheet" type="text/css" /><title>
+	人身险产品
+</title></head>
+<body id="Body">
+    <form name="Form" method="post" action="/tabid/6757/default.aspx" id="Form" enctype="multipart/form-data">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjcwNjk2ODMxD2QWBmYPFgIeBFRleHQFeTwhRE9DVFlQRSBodG1sIFBVQkxJQyAiLS8vVzNDLy9EVEQgWEhUTUwgMS4wIFRyYW5zaXRpb25hbC8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9UUi94aHRtbDEvRFREL3hodG1sMS10cmFuc2l0aW9uYWwuZHRkIj5kAgEPZBYQAgUPFgIeB1Zpc2libGVoZAIGDxYCHgdjb250ZW50BQ/kurrouqvpmankuqflk4FkAgcPFgIfAgUu5Lit5Zu95L+d6Zmp55uR552j566h55CG5aeU5ZGY5LyaLEVhc3lTaXRlLEVTU2QCCA8WAh8CBTlDb3B5cmlnaHQgMjAxMSBieSBIdWlsYW4gSW5mb3JtYXRpb24gVGVjaG5vbG9neSBDby4sIEx0ZC5kAgkPFgIfAgUJRWFzeVNpdGUgZAIKDxYCHwIFIeS4reWbveS/nemZqeebkeedo+euoeeQhuWnlOWRmOS8mmQCDQ8WAh8CBQ1JTkRFWCwgRk9MTE9XZAIRDxYCHglpbm5lcmh0bWwFvg8uZXNzX2Vzc21lbnVfY3RsZXNzbWVudV9zcG1iY3RyIHtib3JkZXItYm90dG9tOiBUcmFuc3BhcmVudCAwcHggc29saWQ7IGJvcmRlci1sZWZ0OiBUcmFuc3BhcmVudCAwcHggc29saWQ7IGJvcmRlci10b3A6IFRyYW5zcGFyZW50IDBweCBzb2xpZDsgYm9yZGVyLXJpZ2h0OiBUcmFuc3BhcmVudCAwcHggc29saWQ7ICBiYWNrZ3JvdW5kLWNvbG9yOiBUcmFuc3BhcmVudDt9DQouZXNzX2Vzc21lbnVfY3RsZXNzbWVudV9zcG1iYXIge2N1cnNvcjogcG9pbnRlcjsgY3Vyc29yOiBoYW5kOyBoZWlnaHQ6MDt9DQouZXNzX2Vzc21lbnVfY3RsZXNzbWVudV9zcG1pdG0ge2N1cnNvcjogcG9pbnRlcjsgY3Vyc29yOiBoYW5kOyBjb2xvcjogVHJhbnNwYXJlbnQ7IGZvbnQtc2l6ZTogMTJwdDsgZm9udC13ZWlnaHQ6IG5vcm1hbDsgZm9udC1zdHlsZTogbm9ybWFsOyBib3JkZXItbGVmdDogVHJhbnNwYXJlbnQgMHB4IHNvbGlkOyBib3JkZXItYm90dG9tOiBUcmFuc3BhcmVudCAwcHggc29saWQ7IGJvcmRlci10b3A6IFRyYW5zcGFyZW50IDBweCBzb2xpZDsgYm9yZGVyLXJpZ2h0OiBUcmFuc3BhcmVudCAwcHggc29saWQ7fQ0KLmVzc19lc3NtZW51X2N0bGVzc21lbnVfc3BtaWNuIHtjdXJzb3I6IHBvaW50ZXI7IGN1cnNvcjogaGFuZDsgYmFja2dyb3VuZC1jb2xvcjogVHJhbnNwYXJlbnQ7IGJvcmRlci1sZWZ0OiBUcmFuc3BhcmVudCAxcHggc29saWQ7IGJvcmRlci1ib3R0b206IFRyYW5zcGFyZW50IDFweCBzb2xpZDsgYm9yZGVyLXRvcDogVHJhbnNwYXJlbnQgMXB4IHNvbGlkOyB0ZXh0LWFsaWduOiBjZW50ZXI7IHdpZHRoOiA1O2hlaWdodDogMDtkaXNwbGF5Om5vbmU7fQ0KLmVzc19lc3NtZW51X2N0bGVzc21lbnVfc3Btc3ViIHt6LWluZGV4OiAxMDAwOyBjdXJzb3I6IHBvaW50ZXI7IGN1cnNvcjogaGFuZDsgYmFja2dyb3VuZC1jb2xvcjogVHJhbnNwYXJlbnQ7IGZpbHRlcjpwcm9naWQ6RFhJbWFnZVRyYW5zZm9ybS5NaWNyb3NvZnQuU2hhZG93KGNvbG9yPSdEaW1HcmF5JywgRGlyZWN0aW9uPTEzNSwgU3RyZW5ndGg9MykgO2JvcmRlci1ib3R0b206IFRyYW5zcGFyZW50IDBweCBzb2xpZDsgYm9yZGVyLWxlZnQ6IFRyYW5zcGFyZW50IDBweCBzb2xpZDsgYm9yZGVyLXRvcDogVHJhbnNwYXJlbnQgMHB4IHNvbGlkOyBib3JkZXItcmlnaHQ6IFRyYW5zcGFyZW50IDBweCBzb2xpZDt9DQouZXNzX2Vzc21lbnVfY3RsZXNzbWVudV9zcG1icmsge2JvcmRlci1ib3R0b206IFRyYW5zcGFyZW50IDBweCBzb2xpZDsgYm9yZGVyLWxlZnQ6IFRyYW5zcGFyZW50IDBweCBzb2xpZDsgYm9yZGVyLXRvcDogVHJhbnNwYXJlbnQgMHB4IHNvbGlkOyAgYm9yZGVyLXJpZ2h0OiBUcmFuc3BhcmVudCAwcHggc29saWQ7IGJhY2tncm91bmQtY29sb3I6IFdoaXRlOyBoZWlnaHQ6IDBweDt9DQouZXNzX2Vzc21lbnVfY3RsZXNzbWVudV9zcG1pdG1zZWwge2JhY2tncm91bmQtY29sb3I6IFRyYW5zcGFyZW50OyBjdXJzb3I6IHBvaW50ZXI7IGN1cnNvcjogaGFuZDsgY29sb3I6IFRyYW5zcGFyZW50OyBmb250LXNpemU6IDEycHQ7IGZvbnQtd2VpZ2h0OiBub3JtYWw7IGZvbnQtc3R5bGU6IG5vcm1hbDt9DQouZXNzX2Vzc21lbnVfY3RsZXNzbWVudV9zcG1hcncge2ZvbnQtZmFtaWx5OiB3ZWJkaW5nczsgZm9udC1zaXplOiAxMHB0OyBjdXJzb3I6IHBvaW50ZXI7IGN1cnNvcjogaGFuZDsgYm9yZGVyLXJpZ2h0OiBUcmFuc3BhcmVudCAxcHggc29saWQ7IGJvcmRlci1ib3R0b206IFRyYW5zcGFyZW50IDFweCBzb2xpZDsgYm9yZGVyLXRvcDogVHJhbnNwYXJlbnQgMHB4IHNvbGlkOyBkaXNwbGF5Om5vbmU7fQ0KLmVzc19lc3NtZW51X2N0bGVzc21lbnVfc3BtcmFydyB7Zm9udC1mYW1pbHk6IHdlYmRpbmdzOyBmb250LXNpemU6IDEwcHQ7IGN1cnNvcjogcG9pbnRlcjsgY3Vyc29yOiBoYW5kO30NCi5lc3NfZXNzbWVudV9jdGxlc3NtZW51X3NwbWl0bXNjciB7d2lkdGg6IDEwMCU7IGZvbnQtc2l6ZTogNnB0O30NCmQCAg9kFgICAQ9kFgZmD2QWAmYPFgIfAWgWBAIBD2QWBAIDDxBkZBYAZAIFDw8WAh8BaGRkAgMPZBYEZg8UKwACFCsAAg8WBh4NU2VsZWN0ZWRJbmRleGYeBFNraW4FB0RlZmF1bHQeE0VuYWJsZUVtYmVkZGVkU2tpbnNoZBAWBmYCAQICAgMCBAIFFgYUKwACZGQUKwACZGQUKwACDxYCHwFoZGQUKwACDxYCHwFoZGQUKwACZGQUKwACZGQPFgZmZmZmZmYWAQVuVGVsZXJpay5XZWIuVUkuUmFkVGFiLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDExLjEuNTE5LjM1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDRkFgQCAg8PFgIfAWhkZAIDDw8WAh8BaGRkAgEPFCsAAg8WAh8EZmQVBghQYWdlSG9tZQtQYWdlQ3VycmVudAxQYWdlRmF2b3JpdGUKUGFnZU1hbmFnZQhQYWdlU2l0ZQ5QYWdlSG9zdFN5c3RlbRYEAgIPDxYCHwFoZGQCAw8PFgIfAWhkZAIKD2QWAmYPZBYIZg9kFgICAg9kFgQCAQ8PFgIfAWhkZAIDD2QWAgIBDw9kFgIeBWNsYXNzBQlNb2RDSW5mb0NkAgIPZBYCAgIPZBYEAgEPDxYCHwFoZGQCAw9kFgICAQ8PZBYCHwcFEE1vZFRvd0xldmVsTWVudUNkAgQPZBYCAgIPZBYEAgEPDxYCHwFoZGQCAw9kFgICAQ8PZBYCHwcFC01vZEVTU0hUTUxDFgICAQ9kFgICAg8WAh8BaGQCBQ8WAh8HBRN0b25namkgRVNTRW1wdHlQYW5lZAIMDxQrAAIUKwADZGRkZGRk" />
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['Form'];
+if (!theForm) {
+    theForm = document.Form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+
+<script src="/js/esscore.js" type="text/javascript"></script>
+<!-- Solution Partner's ASP.NET Hierarchical Menu (v1.6.1.0) - http://www.solpart.com -->
+<script src="/controls/SolpartMenu/spmenu.js"></script><span id="ess_essMENU_ctlessMENU_divOuterTables">
+<div id="tbless_essMENU_ctlessMENU5182" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5183" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/tabid/5183/Default.aspx';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5183" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5183" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 办事指南</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5183" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5184" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5184/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5184" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5184" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 文件下载</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5184" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU3205" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/tabid/3205/Default.aspx';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU3205" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU3205" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 信息报送</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU3205" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5186" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5186/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5186" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5186" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 执法检查证查询</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5186" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5253" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5253/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5253" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5253" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcdx"><div class="bgdian"> 备案产品查询</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5253" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5254" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/tabid/5254/Default.aspx';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5254" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5254" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 保险机构查询</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5254" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5255" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://iir.circ.gov.cn/');" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5255" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5255" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 专业中介机构查询</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5255" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5256" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://iir.circ.gov.cn/');" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5256" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5256" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 营销员查询</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5256" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7685" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5182" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab7685/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7685" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7685" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 商业车险示范条款及费率基准查询</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7685" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5181" class="ess_essmenu_ctlessmenu_spmsub" style="position: absolute; left: 873px; top: 185px;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU7768" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5181" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/tabid/7768/Default.aspx';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7768" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7768" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 保险消费投诉</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7768" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7973" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5181" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='http://gzly.circ.gov.cn/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7973" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7973" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 公众留言</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7973" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5194" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5181" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5194/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5194" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5194" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 访谈直播</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5194" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5188" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5181" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/tabid/5188/Default.aspx';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5188" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5188" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 网上调查</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5188" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5175" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5245" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5175" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5245/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5245" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5245" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 政策法规</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5245" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5246" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5175" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5246/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5246" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5246" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 工作动态</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5246" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5247" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5175" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5247/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5247" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5247" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 消费者教育及风险提示</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5247" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5248" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5175" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5248/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5248" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5248" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 投诉维权</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5248" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5249" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5175" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5249/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5249" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5249" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 理论探讨</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5249" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7232" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5175" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://124.127.203.180/tabid/4313/Default.aspx');" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7232" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7232" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 保险知识大讲堂</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7232" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7469" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5175" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab7469/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7469" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7469" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 消费者权益保护系列活动</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7469" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5180" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5196" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5180" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5196/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5196" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5196" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 概况</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5196" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5197" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5180" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5197/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5197" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5197" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 机构设置</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5197" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5199" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5180" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5199/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5199" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5199" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 工作动态</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5199" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5179" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5257" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5179" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5257/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5257" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5257" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 保险统计数据报告</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5257" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5201" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5179" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5201/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5201" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5201" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 保险业经营情况</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5201" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5202" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5179" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5202/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5202" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5202" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 财产险公司保费收入情况</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5202" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5203" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5179" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5203/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5203" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5203" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 人身险公司保费收入情况</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5203" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5204" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5179" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5204/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5204" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5204" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 养老险公司企业年金业务</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5204" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5205" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5179" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5205/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5205" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5205" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 全国各地区保费收入情况</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5205" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5178" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5240" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5178" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5240/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5240" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5240" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 保监会处罚</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5240" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5241" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5178" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5241/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5241" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5241" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 保监局处罚</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5241" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5177" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU7382" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5177" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://xzxk.circ.gov.cn');" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7382" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7382" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 行政审批指南</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7382" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5237" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5177" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://xzxk.circ.gov.cn/f/circ/guide/index?pageid=onlineApply');" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5237" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5237" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 在线申请</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5237" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5238" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5177" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://xzxk.circ.gov.cn/f/circ/guide/index?pageid=onlineQuery');" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5238" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5238" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 在线查询</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5238" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7887" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5177" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://xzxk.circ.gov.cn/f/circ/guide/index?pageid=resultInfo');" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7887" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7887" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 结果公开</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7887" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5176" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5222" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5176" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5222/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5222" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5222" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 法律</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5222" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5223" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5176" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5223/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5223" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5223" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 行政法规</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5223" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5224" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5176" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5224/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5224" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5224" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 部门规章</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5224" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5225" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5176" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5225/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5225" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5225" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 规范性文件</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5225" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5226" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5176" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5226/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5226" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5226" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 其他法规</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5226" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7758" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5176" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab7758/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7758" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7758" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> Rules &amp; Regulations</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7758" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5174" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5209" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5209/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5209" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5209" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 领导活动</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5209" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5212" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5212/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5212" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5212" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 领导讲话</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5212" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5213" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5213/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5213" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5213" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 公告通知</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5213" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" alt="&gt;" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5219" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5219/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5219" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5219" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 人事信息</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5219" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" alt="&gt;" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU6762" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab6762/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU6762" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU6762" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 党团工会</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU6762" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5208" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5208/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5208" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5208" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 征求意见</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5208" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5210" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5210/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5210" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5210" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 工作交流</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5210" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7642" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5174" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab7642/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7642" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7642" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 时政要闻</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7642" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5219" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5220" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5219" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5220/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5220" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5220" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 人事任免</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5220" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5221" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5219" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5221/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5221" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5221" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 人员招考</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5221" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5213" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5214" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5213" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5214/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5214" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5214" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 公告</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5214" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5215" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5213" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5215/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5215" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5215" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 启事</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5215" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5216" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5213" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5216/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5216" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5216" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 通知</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5216" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5218" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5213" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5218/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5218" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5218" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 通报</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5218" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5217" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5213" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5217/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5217" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5217" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 网站提示</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5217" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU7923" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU7924" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="7923" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab7924/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7924" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7924" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 政策解读</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7924" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5207" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="7923" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5207/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5207" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5207" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 新闻动态</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5207" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU7926" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="7923" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab7926/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU7926" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU7926" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 新闻发布会</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU7926" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+
+<div id="tbless_essMENU_ctlessMENU5169" class="ess_essmenu_ctlessmenu_spmsub" style="display:none; position: absolute;">
+<table cellpadding="0" cellspacing="0" border="0">
+   <tbody><tr id="tress_essMENU_ctlessMENU5170" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5169" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5170/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5170" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5170" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 机构简介</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5170" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5195" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5169" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5195/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5195" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5195" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 领导简介</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5195" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5200" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5169" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5200/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5200" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5200" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 主要职责</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5200" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+   <tr id="tress_essMENU_ctlessMENU5206" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBIC(this, event);" parentid="5169" class="ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5206/';" style="">
+       <td unselectable="on" id="iconess_essMENU_ctlessMENU5206" class="ess_essmenu_ctlessmenu_spmicn" style="; "><img src="/images/spacer.gif" /></td>
+       <td unselectable="on" id="tdess_essMENU_ctlessMENU5206" class="ess_essmenu_ctlessmenu_spmitm" savecss="" nowrap="NOWRAP" title="" style=""><div class="bjhzcd"><div class="bgdian"> 发展规划</div></div></td>
+       <td unselectable="on" id="arrowess_essMENU_ctlessMENU5206" width="15px" class="ess_essmenu_ctlessmenu_spmarw" style=""><img src="/images/spacer.gif" /></td>
+   </tr>
+
+</tbody></table>
+</div>
+</span>
+<script src="/Resources/Shared/scripts/MSAJAX/MicrosoftAjax.js" type="text/javascript"></script>
+
+        
+        <input name="ScrollTop" type="hidden" id="ScrollTop" />
+        <input name="__essVariable" type="hidden" id="__essVariable" />    
+        
+        
+<div class="bjhbox"> <!--头部--> <div class="bjhbanner"> <object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1005" height="149" style="top: 0px; left: 98px;"> <param name="_cx" value="26590" /><param name="_cy" value="3942" /><param name="FlashVars" value="" /><param name="Movie" value="/Portals/0/flash/banner.swf" /><param name="Src" value="/Portals/0/flash/banner.swf" /><param name="WMode" value="Transparent" /><param name="Play" value="-1" /><param name="Loop" value="-1" /><param name="Quality" value="High" /><param name="SAlign" value="" /><param name="Menu" value="-1" /><param name="Base" value="" /><param name="AllowScriptAccess" value="" /><param name="Scale" value="ShowAll" /><param name="DeviceFont" value="0" /><param name="EmbedMovie" value="0" /><param name="BGColor" value="" /><param name="SWRemote" value="" /><param name="MovieData" value="" /><param name="SeamlessTabbing" value="1" /><param name="Profile" value="0" /><param name="ProfileAddress" value="" /><param name="ProfilePort" value="0" /><param name="AllowNetworking" value="all" /><param name="AllowFullScreen" value="false" /><param name="AllowFullScreenInteractive" value="false" /><param name="IsDependent" value="0" /><param name="BrowserZoom" value="scale" /> <embed src="/Portals/0/flash/banner.swf" quality="high" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" height="149" width="1005" /> </object> <div id="ess_jiesuo" class="sousuo"> <a name="14262"></a>
+<div width="100%" align="left"></div> <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0"> <tbody> <tr> <td id="ess_ctr14262_ContentPane"><!-- Start_Module_14262 --><table id="ess_ctr14262_ModuleContent" class="ModCInfoC" cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td>
+	
+<style type="text/css">
+    .page_custom td
+    {
+        vertical-align: middle;
+        padding-left: 8px;
+    }
+</style>
+
+</td></tr></tbody></table><!-- End_Module_14262 --></td>
+</tr></tbody></table><br />
+</div> </div> <!--主要区域--> <div class="bjhnav"> <span id="ess_essMENU_ctlessMENU" name="ess$essMENU$ctlessMENU" backcolor="Transparent" iconbackgroundcolor="Transparent" hlcolor="Transparent" shcolor="Transparent" selforecolor="Transparent" selcolor="Transparent" selbordercolor="Transparent" fontstyle="font-family: ; font-size: 12pt; font-weight: normal; font-style: normal; text-decoration: " sysimgpath="/images/" display="horizontal" iconwidth="5" modisplay="None" moutdelay="500" menutransition="None" borderwidth="0" iconimgpath="/Portals/0/" arrowimage="spacer.gif" xml="&lt;root&gt;&lt;menuitem id=&quot;5168&quot; title=&quot;首页&quot; url=&quot;/web/site0/tab5168/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5169&quot; title=&quot;保监会简介&quot; url=&quot;/web/site0/tab5170/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5170&quot; title=&quot;&amp;amp;nbsp;机构简介&quot; url=&quot;/web/site0/tab5170/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5195&quot; title=&quot;&amp;amp;nbsp;领导简介&quot; url=&quot;/web/site0/tab5195/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5200&quot; title=&quot;&amp;amp;nbsp;主要职责&quot; url=&quot;/web/site0/tab5200/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5206&quot; title=&quot;&amp;amp;nbsp;发展规划&quot; url=&quot;/web/site0/tab5206/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;7923&quot; title=&quot;发布与解读&quot; url=&quot;/web/site0/tab7923/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;7924&quot; title=&quot;&amp;amp;nbsp;政策解读&quot; url=&quot;/web/site0/tab7924/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5207&quot; title=&quot;&amp;amp;nbsp;新闻动态&quot; url=&quot;/web/site0/tab5207/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7926&quot; title=&quot;&amp;amp;nbsp;新闻发布会&quot; url=&quot;/web/site0/tab7926/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5174&quot; title=&quot;工作动态&quot; url=&quot;/web/site0/tab5174/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5209&quot; title=&quot;&amp;amp;nbsp;领导活动&quot; url=&quot;/web/site0/tab5209/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5212&quot; title=&quot;&amp;amp;nbsp;领导讲话&quot; url=&quot;/web/site0/tab5212/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5213&quot; title=&quot;&amp;amp;nbsp;公告通知&quot; url=&quot;/web/site0/tab5213/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5214&quot; title=&quot;&amp;amp;nbsp;公告&quot; url=&quot;/web/site0/tab5214/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5215&quot; title=&quot;&amp;amp;nbsp;启事&quot; url=&quot;/web/site0/tab5215/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5216&quot; title=&quot;&amp;amp;nbsp;通知&quot; url=&quot;/web/site0/tab5216/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5218&quot; title=&quot;&amp;amp;nbsp;通报&quot; url=&quot;/web/site0/tab5218/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5217&quot; title=&quot;&amp;amp;nbsp;网站提示&quot; url=&quot;/web/site0/tab5217/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5219&quot; title=&quot;&amp;amp;nbsp;人事信息&quot; url=&quot;/web/site0/tab5219/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5220&quot; title=&quot;&amp;amp;nbsp;人事任免&quot; url=&quot;/web/site0/tab5220/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5221&quot; title=&quot;&amp;amp;nbsp;人员招考&quot; url=&quot;/web/site0/tab5221/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;6762&quot; title=&quot;&amp;amp;nbsp;党团工会&quot; url=&quot;/web/site0/tab6762/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5208&quot; title=&quot;&amp;amp;nbsp;征求意见&quot; url=&quot;/web/site0/tab5208/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5210&quot; title=&quot;&amp;amp;nbsp;工作交流&quot; url=&quot;/web/site0/tab5210/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7642&quot; title=&quot;&amp;amp;nbsp;时政要闻&quot; url=&quot;/web/site0/tab7642/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5176&quot; title=&quot;政策法规&quot; url=&quot;/web/site0/tab5176/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5222&quot; title=&quot;&amp;amp;nbsp;法律&quot; url=&quot;/web/site0/tab5222/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5223&quot; title=&quot;&amp;amp;nbsp;行政法规&quot; url=&quot;/web/site0/tab5223/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5224&quot; title=&quot;&amp;amp;nbsp;部门规章&quot; url=&quot;/web/site0/tab5224/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5225&quot; title=&quot;&amp;amp;nbsp;规范性文件&quot; url=&quot;/web/site0/tab5225/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5226&quot; title=&quot;&amp;amp;nbsp;其他法规&quot; url=&quot;/web/site0/tab5226/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7758&quot; title=&quot;&amp;amp;nbsp;Rules &amp;amp; Regulations&quot; url=&quot;/web/site0/tab7758/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5177&quot; title=&quot;行政许可&quot; url=&quot;javascript:window.open('http://xzxk.circ.gov.cn')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;7382&quot; title=&quot;&amp;amp;nbsp;行政审批指南&quot; url=&quot;javascript:window.open('http://xzxk.circ.gov.cn')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5237&quot; title=&quot;&amp;amp;nbsp;在线申请&quot; url=&quot;javascript:window.open('http://xzxk.circ.gov.cn/f/circ/guide/index?pageid=onlineApply')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5238&quot; title=&quot;&amp;amp;nbsp;在线查询&quot; url=&quot;javascript:window.open('http://xzxk.circ.gov.cn/f/circ/guide/index?pageid=onlineQuery')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7887&quot; title=&quot;&amp;amp;nbsp;结果公开&quot; url=&quot;javascript:window.open('http://xzxk.circ.gov.cn/f/circ/guide/index?pageid=resultInfo')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5178&quot; title=&quot;行政处罚&quot; url=&quot;/web/site0/tab5178/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5240&quot; title=&quot;&amp;amp;nbsp;保监会处罚&quot; url=&quot;/web/site0/tab5240/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5241&quot; title=&quot;&amp;amp;nbsp;保监局处罚&quot; url=&quot;/web/site0/tab5241/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5179&quot; title=&quot;统计数据&quot; url=&quot;/web/site0/tab5179/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5257&quot; title=&quot;&amp;amp;nbsp;保险统计数据报告&quot; url=&quot;/web/site0/tab5257/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5201&quot; title=&quot;&amp;amp;nbsp;保险业经营情况&quot; url=&quot;/web/site0/tab5201/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5202&quot; title=&quot;&amp;amp;nbsp;财产险公司保费收入情况&quot; url=&quot;/web/site0/tab5202/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5203&quot; title=&quot;&amp;amp;nbsp;人身险公司保费收入情况&quot; url=&quot;/web/site0/tab5203/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5204&quot; title=&quot;&amp;amp;nbsp;养老险公司企业年金业务&quot; url=&quot;/web/site0/tab5204/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5205&quot; title=&quot;&amp;amp;nbsp;全国各地区保费收入情况&quot; url=&quot;/web/site0/tab5205/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5180&quot; title=&quot;派出机构&quot; url=&quot;/web/site0/tab5196/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5196&quot; title=&quot;&amp;amp;nbsp;概况&quot; url=&quot;/web/site0/tab5196/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5197&quot; title=&quot;&amp;amp;nbsp;机构设置&quot; url=&quot;/web/site0/tab5197/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5199&quot; title=&quot;&amp;amp;nbsp;工作动态&quot; url=&quot;/web/site0/tab5199/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5175&quot; title=&quot;消费者保护&quot; url=&quot;/web/site0/tab5175/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5245&quot; title=&quot;&amp;amp;nbsp;政策法规&quot; url=&quot;/web/site0/tab5245/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5246&quot; title=&quot;&amp;amp;nbsp;工作动态&quot; url=&quot;/web/site0/tab5246/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5247&quot; title=&quot;&amp;amp;nbsp;消费者教育及风险提示&quot; url=&quot;/web/site0/tab5247/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5248&quot; title=&quot;&amp;amp;nbsp;投诉维权&quot; url=&quot;/web/site0/tab5248/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5249&quot; title=&quot;&amp;amp;nbsp;理论探讨&quot; url=&quot;/web/site0/tab5249/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7232&quot; title=&quot;&amp;amp;nbsp;保险知识大讲堂&quot; url=&quot;javascript:window.open('http://124.127.203.180/tabid/4313/Default.aspx')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7469&quot; title=&quot;&amp;amp;nbsp;消费者权益保护系列活动&quot; url=&quot;/web/site0/tab7469/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5181&quot; title=&quot;互动交流&quot; url=&quot;/tabid/7768/Default.aspx&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaid&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;7768&quot; title=&quot;&amp;amp;nbsp;保险消费投诉&quot; url=&quot;/tabid/7768/Default.aspx&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7973&quot; title=&quot;&amp;amp;nbsp;公众留言&quot; url=&quot;http://gzly.circ.gov.cn/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5194&quot; title=&quot;&amp;amp;nbsp;访谈直播&quot; url=&quot;/web/site0/tab5194/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5188&quot; title=&quot;&amp;amp;nbsp;网上调查&quot; url=&quot;/tabid/5188/Default.aspx&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;menuitem id=&quot;5182&quot; title=&quot;办事服务&quot; url=&quot;/tabid/5183/Default.aspx&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;gencaidxz&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&quot;&gt;&lt;menuitem id=&quot;5183&quot; title=&quot;&amp;amp;nbsp;办事指南&quot; url=&quot;/tabid/5183/Default.aspx&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5184&quot; title=&quot;&amp;amp;nbsp;文件下载&quot; url=&quot;/web/site0/tab5184/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;3205&quot; title=&quot;&amp;amp;nbsp;信息报送&quot; url=&quot;/tabid/3205/Default.aspx&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5186&quot; title=&quot;&amp;amp;nbsp;执法检查证查询&quot; url=&quot;/web/site0/tab5186/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5253&quot; title=&quot;&amp;amp;nbsp;备案产品查询&quot; url=&quot;/web/site0/tab5253/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcdx&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5254&quot; title=&quot;&amp;amp;nbsp;保险机构查询&quot; url=&quot;/tabid/5254/Default.aspx&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5255&quot; title=&quot;&amp;amp;nbsp;专业中介机构查询&quot; url=&quot;javascript:window.open('http://iir.circ.gov.cn/')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;5256&quot; title=&quot;&amp;amp;nbsp;营销员查询&quot; url=&quot;javascript:window.open('http://iir.circ.gov.cn/')&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;menuitem id=&quot;7685&quot; title=&quot;&amp;amp;nbsp;商业车险示范条款及费率基准查询&quot; url=&quot;/web/site0/tab7685/&quot; lefthtml=&quot;&amp;lt;div class=&amp;quot;bjhzcd&amp;quot;&amp;gt;&amp;lt;div class=&amp;quot;bgdian&amp;quot;&amp;gt;&quot; righthtml=&quot;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&quot; /&gt;&lt;/menuitem&gt;&lt;/root&gt;"><table id="tbless_essMENU_ctlessMENUMenuBar" cellpadding="0" cellspacing="0" border="0" class="ess_essmenu_ctlessmenu_spmbctr" width="100%" style="vertical-align: middle; ">
+	<tbody><tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5168" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5168/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">首页</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5169" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5170/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">保监会简介</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU7923" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab7923/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">发布与解读</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5174" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5174/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">工作动态</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5176" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5176/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">政策法规</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5177" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="window.open('http://xzxk.circ.gov.cn');" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">行政许可</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5178" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5178/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">行政处罚</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5179" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5179/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">统计数据</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5180" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5196/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">派出机构</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5175" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/web/site0/tab5175/';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">消费者保护</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5181" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/tabid/7768/Default.aspx';" style="top: 150px; left: 873px;">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaid">互动交流</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody><tr id="tdess_essMENU_ctlessMENU5182" onmouseover="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMO(this);" onmouseout="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMOUT(this);" onclick="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBC(this, event);" onmousedown="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMD(this);" onmouseup="m_oSolpartMenu['ess_essMENU_ctlessMENU'].onMBMU(this);" class="ess_essmenu_ctlessmenu_spmbar ess_essmenu_ctlessmenu_spmitm" savecss="" saveselcss="" menuclick="document.location.href='/tabid/5183/Default.aspx';" style="">
+<td unselectable="on" nowrap="NOWRAP" title=""><div class="gencaidxz">办事服务</div>
+</td>
+</tr>
+</tbody></table>
+</td>
+       <td width="100%"><img src="/images/spacer.gif" /></td>   </tr>
+</tbody></table>
+</span> </div> <div class="mailbox"> <div class="mailleftbj"> <div class="mailrightbj"> <div class="mailquyu"> <div id="ess_contentpane" class="mailleft"> <a name="16660"></a>
+<div width="100%" align="left"></div> <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0"> <tbody> <tr> <td id="ess_ctr16660_ContentPane"><!-- Start_Module_16660 --><table id="ess_ctr16660_ModuleContent" class="ModTowLevelMenuC" cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td>
+	<!--Two Level Menu Start Point--><div id="tmenu_16660"><div class="erjit">办事服务</div><div class="erjiys"> <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top"><td class="firstNormalTd"><a href="/tabid/5183/Default.aspx" class="firstNormal"><span>办事指南</span></a></td></tr><tr valign="top"><td class="firstNormalTd"><a href="/web/site0/tab5184/" class="firstNormal"><span>文件下载</span></a></td></tr><tr valign="top"><td class="firstNormalTd"><a href="/tabid/3205/Default.aspx" class="firstNormal"><span>信息报送</span></a></td></tr><tr valign="top"><td class="firstNormalTd"><a href="/web/site0/tab5186/" class="firstNormal"><span>执法检查证查询</span></a></td></tr><tr valign="top"><td class="firstActiveTd"><a href="/web/site0/tab5253/" class="firstNormal"><span>备案产品查询</span></a> <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr valign="top"><td><div class="erjicaider"><a href="/web/site0/tab6757/" class="secondActive"><span>人身险产品</span></a></div></td></tr><tr valign="top"><td><div class="erjicaider"><a href="/web/site0/tab6758/" class="secondNormal"><span>财产险产品</span></a></div></td></tr><tr valign="top"><td><div class="erjicaider"><a href="/tabid/6532/Default.aspx" class="secondNormal"><span>产品检索</span></a></div></td></tr></tbody></table></td></tr><tr valign="top"><td class="firstNormalTd"><a href="/tabid/5254/Default.aspx" class="firstNormal"><span>保险机构查询</span></a></td></tr><tr valign="top"><td class="firstNormalTd"><a href="http://iir.circ.gov.cn/" class="firstNormal" target="_blank"><span>专业中介机构查询</span></a></td></tr><tr valign="top"><td class="firstNormalTd"><a href="http://iir.circ.gov.cn/" class="firstNormal" target="_blank"><span>营销员查询</span></a></td></tr><tr valign="top"><td class="firstNormalTd"><a href="/web/site0/tab7685/" class="firstNormal"><span>商业车险示范条款及费率基准查询</span></a></td></tr></tbody></table></div></div><!--Two Level Menu End Point-->
+</td></tr></tbody></table><!-- End_Module_16660 --></td>
+</tr></tbody></table><br />
+</div> <div class="mailright"> <div class="mailzx"> 您现在的位置： <span id="ess_essBREADCRUMB_lblBreadCrumb"><a href="/web/site0/" class="dqwz">首页</a> &gt; <a href="/tabid/5183/Default.aspx" class="dqwz">办事服务</a> &gt; <a href="/web/site0/tab5253/" class="dqwz">备案产品查询</a> &gt; <a href="/web/site0/tab6757/" class="dqwz">人身险产品</a></span>
+ </div> <div id="ess_mailrightpane"> <a name="17180"></a>
+<div width="100%" align="left"></div> <table cellspacing="0" cellpadding="0" width="100%" align="center" border="0"> <tbody> <tr> <td id="ess_ctr17180_ContentPane"><!-- Start_Module_17180 --><table id="ess_ctr17180_ModuleContent" class="ModESSHTMLC" cellpadding="0" cellspacing="0" border="0" width="100%"><tbody><tr><td>
+	<div id="ess_ctr17180_HtmlModule_lblContent" class="Normal">
+	<iframe width="760" scrolling="auto" height="830" frameborder="0" src="/tabid/5253/ctl/ViewOrgList/mid/16658/OrgTypeID/1/Default.aspx?ctlmode=none" hideadminborder="False" id="ifrm_RecordProduct"></iframe>
+</div>
+
+</td></tr></tbody></table><!-- End_Module_17180 --></td>
+</tr></tbody></table><br />
+</div> </div> <div class="clear"> </div> </div> </div> </div> <div class="clear"> </div> </div> </div> <div class="bjgbjbot"> <div class="bjhbanq"> <div class="bjhbqtop"> <img alt="" src="/Portals/0/Skins/2013bjherji/banqtop.jpg" /> </div> <div class="banqneir"> <div class="daohang"> <ul> <li> <a href="/tabid/5244/Default.aspx" target="_blank">网站声明</a> | </li> <li> <a href="/tabid/3155/Default.aspx" target="_blank">使用说明</a> | </li> <li> 阅读排行 | </li> <li> <a href="/tabid/125/Default.aspx" target="_blank">网站地图</a> | </li> <li> <a href="/circwap" target="_blank">WAP网站</a> | </li> <li> <a href="/tabid/3876/Default.aspx" target="_blank">RSS订阅</a> | </li> <li> <a style="color:#014396;font-weight:bold;" class="chlnk" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.circ.gov.cn');">设为首页</a> | </li> <li> <a href="javascript:window.external.AddFavorite('http://www.circ.gov.cn', '中国保险监督管理委员会')"><strong><span style="color:#014396;">加入收藏</span></strong></a> | </li> <li> <a href="http://mail.circ.gov.cn/" target="_blank">邮箱登录</a> </li> </ul> </div> <div style="margin-top:-14px;width:50px;float:left;margin-left:66px;margin-right:-56px;"> <script type="text/javascript">document.write(unescape("%3Cspan id='_ideConac' %3E%3C/span%3E%3Cscript src='http://dcs.conac.cn/js/33/000/0000/40672425/CA330000000406724250002.js' type='text/javascript'%3E%3C/script%3E"));</script><span id="_ideConac"><a href="//bszs.conac.cn/sitename?method=show&amp;id=082E3A1F313F2811E053022819AC169B" target="_blank"><img id="imgConac" vspace="0" hspace="0" border="0" src="//dcs.conac.cn/image/blue.png" data-bd-imgshare-binded="1" /></a></span><script src="http://dcs.conac.cn/js/33/000/0000/40672425/CA330000000406724250002.js" type="text/javascript"></script><span id="_ideConac"></span> </div> <div style="width:700px;" class="banqnr01"> <p> 地址：中国北京市西城区金融大街15号 邮编：100033 电话：（010）66286688 </p> <p> 版权所有：中国保险监督管理委员会 京ICP备05047276号 最佳浏览分辨率1024×768 </p> <p>   </p> <div id="ess_fangwentj" class="tongji ESSEmptyPane"> </div> </div> </div> </div> </div>
+
+        
+    
+<script language="javascript">spm_initMyMenu(null, spm_getById('ess_essMENU_ctlessMENU'));function onxmlloadess_essMENU_ctlessMENU() {return m_oSolpartMenu['ess_essMENU_ctlessMENU'].onXMLLoad();}</script>
+<script type="text/javascript">
+//&lt;![CDATA[
+Sys.Application.initialize();
+//]]&gt;
+</script>
+</form>
+
+
+
+</body></html>
